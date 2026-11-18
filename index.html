@@ -160,48 +160,40 @@
 
     </section>
 
-
-<!-- FORMULIR PEMBELIAN DAN MAPS -->
-<section class="pemesanan" id="pemesanan">
-
-    <div class="judul">
-        <h2>Pemesanan Tiket Wisata</h2>
-        <p>
-            Isi formulir berikut untuk melakukan
-            pemesanan tiket wisata Aceh.
-        </p>
-    </div>
+    
+<!-- FORM PEMBELIAN DAN LOKASI -->
+<section class="booking" id="kontak">
 
     <div class="booking-container">
 
-        <!-- FORMULIR PEMBELIAN -->
+        <!-- FORMULIR -->
         <div class="form-box">
 
-            <h3>Formulir Pembelian</h3>
+            <h2>Formulir Pembelian</h2>
 
             <form id="formPembelian">
 
                 <label>Nama Lengkap</label>
                 <input type="text" id="nama"
-                placeholder="Masukkan nama lengkap" required>
+                placeholder="Masukkan nama kamu" required>
 
                 <label>Email</label>
                 <input type="email" id="email"
                 placeholder="Masukkan email" required>
 
-                <label>Nomor Telepon</label>
+                <label>Nomor WhatsApp</label>
                 <input type="tel" id="telepon"
-                placeholder="Masukkan nomor telepon" required>
+                placeholder="Masukkan nomor WhatsApp" required>
 
-                <label>Pilih Destinasi Wisata</label>
+                <label>Pilih Destinasi</label>
                 <select id="destinasi" required>
-                    <option value="">-- Pilih Wisata --</option>
-                    <option value="Masjid Raya Baiturrahman">Masjid Raya Baiturrahman</option>
-                    <option value="Pantai Iboih">Pantai Iboih</option>
-                    <option value="Pulau Rubiah">Pulau Rubiah</option>
-                    <option value="Danau Laut Tawar">Danau Laut Tawar</option>
-                    <option value="Museum Tsunami Aceh">Museum Tsunami Aceh</option>
-                    <option value="Pantai Lampuuk">Pantai Lampuuk</option>
+                    <option value="">Pilih Destinasi Wisata</option>
+                    <option>Masjid Raya Baiturrahman</option>
+                    <option>Pantai Iboih</option>
+                    <option>Pulau Rubiah</option>
+                    <option>Danau Laut Tawar</option>
+                    <option>Museum Tsunami Aceh</option>
+                    <option>Pantai Lampuuk</option>
                 </select>
 
                 <label>Tanggal Kunjungan</label>
@@ -209,44 +201,37 @@
 
                 <label>Jumlah Tiket</label>
                 <input type="number" id="jumlah"
-                min="1" value="1" required>
-
-                <label>Catatan Tambahan</label>
-                <textarea id="catatan"
-                placeholder="Tulis catatan jika ada"></textarea>
+                min="1" placeholder="Jumlah tiket" required>
 
                 <button type="submit">
-                    Pesan Tiket Sekarang
+                    Pesan Sekarang
                 </button>
 
             </form>
 
         </div>
 
-        <!-- GOOGLE MAPS -->
+        <!-- LOKASI MAPS -->
         <div class="map-box">
 
-            <h3>Lokasi Wisata Aceh</h3>
+            <h2>Lokasi Aceh</h2>
 
             <p>
-                Temukan lokasi wisata yang ingin
-                kamu kunjungi melalui peta berikut.
+                Temukan lokasi Kota Banda Aceh
+                melalui Google Maps.
             </p>
 
             <iframe
-                id="petaWisata"
-                src="https://maps.google.com/maps?q=Wisata%20Aceh&t=&z=8&ie=UTF8&iwloc=&output=embed"
-                allowfullscreen=""
+                src="https://maps.google.com/maps?q=Banda%20Aceh%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen
                 loading="lazy">
             </iframe>
 
-            <div class="map-description">
-                <h4>Jelajahi Keindahan Aceh</h4>
-                <p>
-                    Nikmati keindahan alam, sejarah,
-                    dan budaya Serambi Mekkah.
-                </p>
-            </div>
+            <a class="map-button"
+               href="https://www.google.com/maps/search/?api=1&query=Banda+Aceh+Indonesia"
+               target="_blank">
+                Buka di Maps ↗
+            </a>
 
         </div>
 

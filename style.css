@@ -398,3 +398,142 @@ footer p {
         height: 300px;
     }
 }
+
+
+
+/* FORM PEMBELIAN DAN MAPS */
+
+.booking {
+    background-color: #151719;
+    padding: 70px 8%;
+    color: white;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* FORM BOX */
+
+.form-box,
+.map-box {
+    background-color: #242326;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.form-box h2,
+.map-box h2 {
+    color: #a8e5c9;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+/* INPUT FORM */
+
+.form-box label {
+    display: block;
+    color: #a8e5c9;
+    font-weight: bold;
+    margin-bottom: 9px;
+    margin-top: 18px;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 15px;
+    background-color: #55545a;
+    border: 1px solid #888;
+    border-radius: 9px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-box input::placeholder {
+    color: #dddddd;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+    border-color: #a8e5c9;
+}
+
+/* TOMBOL PESAN */
+
+.form-box button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background-color: #a8e5c9;
+    color: #17251e;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background-color: #d4b36b;
+}
+
+/* MAPS */
+
+.map-box p {
+    color: #dddddd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+.map-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #2878d0;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-button:hover {
+    background-color: #155ca8;
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 768px) {
+
+    .booking {
+        padding: 40px 5%;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-box,
+    .map-box {
+        padding: 22px;
+    }
+
+    .map-box iframe {
+        height: 300px;
+    }
+
+}

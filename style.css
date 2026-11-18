@@ -254,3 +254,147 @@ footer p {
         font-size: 25px;
     }
 }
+
+
+/* FORM PEMBELIAN DAN MAPS */
+
+.pemesanan {
+    padding: 65px 8%;
+    background-color: #f7f8f2;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* FORMULIR */
+
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.form-box h3,
+.map-box h3 {
+    color: #245c3b;
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    border-color: #245c3b;
+}
+
+.form-box textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 7px;
+    background-color: #245c3b;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background-color: #d49b48;
+}
+
+/* MAPS */
+
+.map-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.map-box > p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    border-radius: 10px;
+}
+
+.map-description {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #e8efe5;
+    border-radius: 8px;
+}
+
+.map-description h4 {
+    color: #245c3b;
+    margin-bottom: 8px;
+}
+
+.map-description p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pemesanan {
+        padding: 45px 5%;
+    }
+
+    .form-box,
+    .map-box {
+        padding: 22px;
+    }
+
+    .map-box iframe {
+        height: 300px;
+    }
+}

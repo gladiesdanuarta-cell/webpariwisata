@@ -160,6 +160,101 @@
 
     </section>
 
+
+<!-- FORMULIR PEMBELIAN DAN MAPS -->
+<section class="pemesanan" id="pemesanan">
+
+    <div class="judul">
+        <h2>Pemesanan Tiket Wisata</h2>
+        <p>
+            Isi formulir berikut untuk melakukan
+            pemesanan tiket wisata Aceh.
+        </p>
+    </div>
+
+    <div class="booking-container">
+
+        <!-- FORMULIR PEMBELIAN -->
+        <div class="form-box">
+
+            <h3>Formulir Pembelian</h3>
+
+            <form id="formPembelian">
+
+                <label>Nama Lengkap</label>
+                <input type="text" id="nama"
+                placeholder="Masukkan nama lengkap" required>
+
+                <label>Email</label>
+                <input type="email" id="email"
+                placeholder="Masukkan email" required>
+
+                <label>Nomor Telepon</label>
+                <input type="tel" id="telepon"
+                placeholder="Masukkan nomor telepon" required>
+
+                <label>Pilih Destinasi Wisata</label>
+                <select id="destinasi" required>
+                    <option value="">-- Pilih Wisata --</option>
+                    <option value="Masjid Raya Baiturrahman">Masjid Raya Baiturrahman</option>
+                    <option value="Pantai Iboih">Pantai Iboih</option>
+                    <option value="Pulau Rubiah">Pulau Rubiah</option>
+                    <option value="Danau Laut Tawar">Danau Laut Tawar</option>
+                    <option value="Museum Tsunami Aceh">Museum Tsunami Aceh</option>
+                    <option value="Pantai Lampuuk">Pantai Lampuuk</option>
+                </select>
+
+                <label>Tanggal Kunjungan</label>
+                <input type="date" id="tanggal" required>
+
+                <label>Jumlah Tiket</label>
+                <input type="number" id="jumlah"
+                min="1" value="1" required>
+
+                <label>Catatan Tambahan</label>
+                <textarea id="catatan"
+                placeholder="Tulis catatan jika ada"></textarea>
+
+                <button type="submit">
+                    Pesan Tiket Sekarang
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- GOOGLE MAPS -->
+        <div class="map-box">
+
+            <h3>Lokasi Wisata Aceh</h3>
+
+            <p>
+                Temukan lokasi wisata yang ingin
+                kamu kunjungi melalui peta berikut.
+            </p>
+
+            <iframe
+                id="petaWisata"
+                src="https://maps.google.com/maps?q=Wisata%20Aceh&t=&z=8&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+            <div class="map-description">
+                <h4>Jelajahi Keindahan Aceh</h4>
+                <p>
+                    Nikmati keindahan alam, sejarah,
+                    dan budaya Serambi Mekkah.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    
     <!-- FOOTER -->
     <footer id="kontak">
 
